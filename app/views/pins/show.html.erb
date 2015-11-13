@@ -2,7 +2,7 @@
 
 <h2>Edit Pin</h2>
 
-<form action="/pin/<%= @pin.id %>" method="post">
+<form action="/pins/<%= @pin.id %>" method="post">
  <input type="hidden" name="_method" value="put">
 
  <label for="pin[title]">Title:</label>
@@ -14,7 +14,7 @@
  <input type="submit" value="Create">
 </form>
 
-<form action=pin_path(pin) method="post">
+<form action="/pins/<%= @pin.id %>" method="post">
  <input type="hidden" name="_method" value="delete">
  <input class="button-delete" type="submit" value="Delete!">
 </form>

@@ -11,7 +11,7 @@ end
 def update
    @pin = Pin.find(params[:id])
    @pin.update(pin_params)
-   redirect_to pins_path()
+   redirect_to pins_path
  end
 
 
@@ -27,10 +27,6 @@ def create
  end
 
  def show
-   @pin = Pin.find(params[:id])
- end
-
- def edit
    @pin = Pin.find(params[:id])
  end
 
