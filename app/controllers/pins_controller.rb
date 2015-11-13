@@ -5,6 +5,7 @@ def index
 end
 
 def show
+  @pins = Pin.find(params[:id])
 end
 
 def new
@@ -14,9 +15,11 @@ end
 def edit
 end
 
+
+
 def create
-   @pin = Pin.create!(pin_params)
-   redirect_to @pin
+  @pin = Pin.create!(pin_params)
+  redirect_to pin_path(@pins)
  end
 
  def show

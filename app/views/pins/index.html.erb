@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Pinspiration</title>
-  </head>
-  <body>
+<h2>Pins <a href="/pins/new">(+)</a></h2>
 
-<%= yield %>
+<ul>
 
-  </body>
-</html>
+ <% @pins.each do |pin| %>
+   <div class = "board">
+     <%= "#{pin.title}" %>
+     <%= image_tag "#{pin.image_url}", class: "pin-pictures"%>
+    </div>
+ <% end %>
+
+</ul>

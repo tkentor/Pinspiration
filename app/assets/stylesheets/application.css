@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+
+body{
+  font-family: "avenir";
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+  background: url("https://farm4.staticflickr.com/3581/3320074408_e929e99c5d_b.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.pin-pictures{
+  width: auto;
+  display: block;
+  max-width: 90%;
+  height: auto;
+  max-height: 90%;
+  margin: 10px;
+  background-size: cover;
+  border: 3px solid black;
+}
+
+.board{
+  margin: 10px;
+  border: 10px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  background: white;
+  display: inline-block;
+  color: black;
+  text-shadow: 0px 0px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
