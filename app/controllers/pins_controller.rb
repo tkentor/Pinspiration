@@ -21,7 +21,7 @@ end
 
 def create
   @pin = Pin.create!(pin_params)
-  redirect_to pin_path(@pin)
+  redirect_to pins_path()
  end
 
  def show
